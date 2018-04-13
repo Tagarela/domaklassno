@@ -1,0 +1,27 @@
+.kenburning-container {
+    position: relative;
+    overflow: hidden;
+}
+.kenburning-container img {
+    position: absolute;
+    max-width: none;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+.kenburning-container img.active {
+    z-index: 10;
+}
+.kenburning-container img.active>span.cap {
+    z-index: 11;
+    color:red;
+    float:right;
+}
+.kenburning-container img.last-active {
+    z-index: 9;
+}
+.kenburning-container img.last-active>span.cap {
+    z-index: 10;
+    color:red;
+    float:left;
+}
